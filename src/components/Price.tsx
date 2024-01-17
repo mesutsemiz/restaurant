@@ -1,8 +1,15 @@
-import React from 'react'
+"use client";
 
-const Price = () => {
+import React, { useEffect, useState } from "react";
+
+type Props = {
+  price: number;
+  id: number;
+  options?: { title: string; additionalPrice: number }[];
+};
+const Price = ({price, id, options}:Props) => {
   return (
-    <div>Price</div>
+    <div>{price}</div>
   )
 }
 
